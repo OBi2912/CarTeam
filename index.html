@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTeam | Accesorios Premium para Autos</title>
+    <meta name="description"
+        content="La mejor tienda de accesorios, repuestos y llantas para tu vehículo. Calidad premium y diseño exclusivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Car<span>Team</span></a>
+            <nav class="nav-links">
+                <a href="index.html#inicio" data-i18n="nav_home">Inicio</a>
+                <a href="index.html#categorias" data-i18n="nav_categories">Categorías</a>
+                <a href="index.html#productos" data-i18n="nav_products">Productos</a>
+                <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+            </nav>
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 20px;">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <a href="#productos" class="btn btn-primary" data-i18n="btn_buy">Comprar Ahora</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Equipa tu Vehículo con lo Mejor</h1>
+                <p data-i18n="hero_desc">Descubre nuestra exclusiva selección de repuestos, llantas y accesorios de lujo
+                    para llevar tu auto
+                    al siguiente nivel.</p>
+                <div class="hero-btns">
+                    <a href="#categorias" class="btn btn-primary" data-i18n="hero_btn_catalog">Ver Catálogo</a>
+                    <a href="#contacto" class="btn btn-outline" data-i18n="hero_btn_contact">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categorias" class="section">
+        <div class="container">
+            <h2 data-i18n="cat_title">Nuestras Categorías</h2>
+            <p data-i18n="cat_subtitle">Todo lo que necesitas en un solo lugar.</p>
+
+            <div class="categories-grid">
+                <!-- Category 1: Repuestos -->
+                <div class="category-card" data-category="repuestos">
+                    <div class="category-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1000&auto=format&fit=crop');">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Repuestos</h3>
+                        <p>Piezas originales y de alto rendimiento.</p>
+                    </div>
+                </div>
+
+                <!-- Category 2: Llantas -->
+                <div class="category-card" data-category="llantas">
+                    <div class="category-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1578844251758-2f71da645217?q=80&w=1000&auto=format&fit=crop');">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Llantas y Rines</h3>
+                        <p>Estilo y agarre para cualquier terreno.</p>
+                    </div>
+                </div>
+
+                <!-- Category 3: Interior -->
+                <div class="category-card" data-category="interior">
+                    <div class="category-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1000&auto=format&fit=crop');">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Interior</h3>
+                        <p>Confort y tecnología para tu cabina.</p>
+                    </div>
+                </div>
+
+                <!-- Category 4: Exterior -->
+                <div class="category-card" data-category="exterior">
+                    <div class="category-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1600706432502-77b0e2e7bf47?q=80&w=1000&auto=format&fit=crop');">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Exterior</h3>
+                        <p>Body kits, luces y protección.</p>
+                    </div>
+                </div>
+
+                <!-- Category 5: Audio y Video -->
+                <div class="category-card" data-category="audio">
+                    <div class="category-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1000&auto=format&fit=crop');">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Audio y Video</h3>
+                        <p>Sonido de alta fidelidad y pantallas.</p>
+                    </div>
+                </div>
+
+                <!-- Category 6: Cuidado y Detailing -->
+                <div class="category-card" data-category="care">
+                    <div class="category-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop');">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Car Care</h3>
+                        <p>Productos de limpieza y detailing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="productos" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 data-i18n="prod_title">Productos Destacados</h2>
+                    <p data-i18n="prod_subtitle">Lo más vendido de la temporada.</p>
+                </div>
+                <button id="resetFilterBtn" class="btn btn-outline" style="display: none;" data-i18n="btn_show_all">Ver
+                    Todos</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="llantas" data-id="1" data-title="Rines Deportivos 19 Pulgadas"
+                    data-price="899.00" data-quality="Aleación Premium"
+                    data-desc="Rines ligeros de alta resistencia. Diseño aerodinámico para mejor rendimiento."
+                    data-img="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1000&auto=format&fit=crop"
+                            alt="Rines Deportivos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rines Deportivos 19"</h3>
+                        <span class="product-price">$899.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="exterior" data-id="2" data-title="Kit de Luces LED Underglow"
+                    data-price="120.00" data-quality="RGB Impermeable"
+                    data-desc="Iluminación LED personalizable con control remoto. Resistente al agua y golpes."
+                    data-img="https://images.unsplash.com/photo-1609526393158-7628a83f9841?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1609526393158-7628a83f9841?q=80&w=1000&auto=format&fit=crop"
+                            alt="Kit de Luces LED">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit de Luces LED Underglow</h3>
+                        <span class="product-price">$120.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="interior" data-id="3" data-title="Fundas de Asiento Premium"
+                    data-price="250.00" data-quality="Cuero Genuino"
+                    data-desc="Fundas a medida con costuras reforzadas. Máximo confort y durabilidad."
+                    data-img="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1000&auto=format&fit=crop"
+                            alt="Asientos de Cuero">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fundas de Asiento Premium</h3>
+                        <span class="product-price">$250.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="repuestos" data-id="4" data-title="Kit de Frenos Cerámicos"
+                    data-price="450.00" data-quality="Premium Racing"
+                    data-desc="Frenos de alto rendimiento para pista y calle. Disipación de calor superior."
+                    data-img="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1000&auto=format&fit=crop"
+                            alt="Frenos Cerámicos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit de Frenos Cerámicos</h3>
+                        <span class="product-price">$450.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="audio" data-id="5" data-title="Subwoofer 12 Pulgadas"
+                    data-price="180.00" data-quality="High Fidelity"
+                    data-desc="Graves profundos y potentes. Cono reforzado y bobina de voz doble."
+                    data-img="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1000&auto=format&fit=crop"
+                            alt="Subwoofer">
+                    </div>
+                    <div class="product-info">
+                        <h3>Subwoofer 12"</h3>
+                        <span class="product-price">$180.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 6: Car Care -->
+                <div class="product-card" data-category="care" data-id="6" data-title="Kit de Pulido Profesional"
+                    data-price="85.00" data-quality="Professional Grade"
+                    data-desc="Restaura el brillo de tu auto. Incluye pulidora, almohadillas y compuestos."
+                    data-img="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop"
+                            alt="Kit Pulido">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit de Pulido</h3>
+                        <span class="product-price">$85.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 7: Repuestos -->
+                <div class="product-card" data-category="repuestos" data-id="7" data-title="Aceite Sintético 5W-30"
+                    data-price="45.00" data-quality="Full Synthetic"
+                    data-desc="Máxima protección para tu motor. Intervalos de cambio extendidos."
+                    data-img="https://images.unsplash.com/photo-1599256621730-535171e28e50?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?q=80&w=1000&auto=format&fit=crop"
+                            alt="Aceite Motor">
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceite Sintético 5W-30</h3>
+                        <span class="product-price">$45.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 8: Exterior -->
+                <div class="product-card" data-category="exterior" data-id="8" data-title="Alerón de Fibra de Carbono"
+                    data-price="320.00" data-quality="Carbon Fiber"
+                    data-desc="Mejora la aerodinámica y el estilo. Acabado brillante y ligero."
+                    data-img="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&w=1000&auto=format&fit=crop"
+                            alt="Alerón">
+                    </div>
+                    <div class="product-info">
+                        <h3>Alerón Fibra de Carbono</h3>
+                        <span class="product-price">$320.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 9: Audio -->
+                <div class="product-card" data-category="audio" data-id="9" data-title="Pantalla Multimedia 10''"
+                    data-price="299.00" data-quality="HD Touchscreen"
+                    data-desc="Android Auto y Apple CarPlay. Navegación GPS y Bluetooth 5.0."
+                    data-img="https://images.unsplash.com/photo-1517260739337-6799d239ce83?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?q=80&w=1000&auto=format&fit=crop"
+                            alt="Pantalla Multimedia">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pantalla Multimedia 10"</h3>
+                        <span class="product-price">$299.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 10: Llantas -->
+                <div class="product-card" data-category="llantas" data-id="10" data-title="Neumático All-Terrain"
+                    data-price="180.00" data-quality="Off-Road"
+                    data-desc="Tracción superior en tierra y asfalto. Durabilidad extrema."
+                    data-img="https://images.unsplash.com/photo-1578844251758-2f71da645217?q=80&w=1000&auto=format&fit=crop">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578844251758-2f71da645217?q=80&w=1000&auto=format&fit=crop"
+                            alt="Neumático">
+                    </div>
+                    <div class="product-info">
+                        <h3>Neumático All-Terrain</h3>
+                        <span class="product-price">$180.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>CarTeam</h4>
+                    <p data-i18n="footer_about">Tu destino número uno para accesorios automotrices de alta gama. Calidad
+                        garantizada en cada
+                        pieza.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" class="social-icon"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank" class="social-icon"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_links">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                        <li><a href="#categorias" data-i18n="nav_categories">Categorías</a></li>
+                        <li><a href="#productos" data-i18n="nav_products">Productos</a></li>
+                        <li><a href="#" data-i18n="footer_terms">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact">Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@carteam.com</li>
+                    </ul>
+
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher" style="margin-top: 20px; display: flex; gap: 10px; align-items: center;">
+                        <select id="langSelect"
+                            style="padding: 8px; border-radius: 5px; background: var(--input-bg); color: var(--text-primary); border: 1px solid var(--border-color);">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                        <button id="themeToggle" class="btn btn-outline" style="padding: 8px 12px; border-radius: 5px;">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2027 CarTeam. <span data-i18n="footer_rights">Todos los derechos By OBi reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Producto">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle">Título del Producto</h2>
+                    <p id="modalDesc" class="modal-description">Descripción del producto...</p>
+
+                    <div class="modal-meta">
+                        <div class="meta-item">
+                            <span class="label" data-i18n="modal_quality">Calidad:</span>
+                            <span id="modalQuality" class="value">Premium</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label" data-i18n="modal_price">Precio:</span>
+                            <span id="modalPrice" class="price">$0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="quantity-selector">
+                        <label for="quantity" data-i18n="modal_quantity">Cantidad:</label>
+                        <div class="qty-controls">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary add-cart-btn" data-i18n="modal_add_cart">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promotional Sidebar -->
+    <aside id="promoSidebar" class="promo-sidebar">
+        <button id="toggleSidebar" class="sidebar-toggle">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="sidebar-content">
+            <h3 data-i18n="sidebar_title">Ofertas Flash</h3>
+            <div id="promoContainer"></div>
+        </div>
+    </aside>
+
+    <!-- Cart Drawer -->
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2 data-i18n="cart_title">Tu Carrito</h2>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items will be injected here -->
+            <p class="empty-cart-msg" data-i18n="cart_empty">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span data-i18n="cart_total">Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button id="checkoutBtn" class="btn btn-primary" style="width: 100%;" data-i18n="cart_checkout">Proceder al
+                Pago</button>
+        </div>
+    </div>
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/1234567890?text=Hola%20CarTeam,%20quisiera%20más%20información." class="whatsapp-float"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
