@@ -188,6 +188,14 @@ document.addEventListener('DOMContentLoaded', () => {
         10: {
             es: { title: "Neumático All-Terrain", desc: "Tracción superior en tierra y asfalto. Durabilidad extrema.", quality: "Off-Road" },
             en: { title: "All-Terrain Tire", desc: "Superior traction on dirt and asphalt. Extreme durability.", quality: "Off-Road" }
+        },
+        11: {
+            es: { title: "Dash Cam 4K Ultra HD", desc: "Grabación en bucle, visión nocturna y sensor de impacto G-Sensor.", quality: "Ultra HD" },
+            en: { title: "Dash Cam 4K Ultra HD", desc: "Loop recording, night vision and G-Sensor impact detection.", quality: "Ultra HD" }
+        },
+        12: {
+            es: { title: "Barra de Techo Aerodinámica", desc: "Capacidad de 75kg, diseño silencioso y compatible con la mayoría de autos.", quality: "Aluminum Alloy" },
+            en: { title: "Aerodynamic Roof Rack", desc: "75kg capacity, silent design and compatible with most cars.", quality: "Aluminum Alloy" }
         }
     };
 

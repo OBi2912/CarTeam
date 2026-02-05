@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 
 <body>
@@ -20,7 +21,11 @@
     <!-- Navigation -->
     <header id="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Car<span>Team</span></a>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="CarTeam Logo"
+                    style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Car<span>Team</span>
+            </a>
             <nav class="nav-links">
                 <a href="index.html#inicio" data-i18n="nav_home">Inicio</a>
                 <a href="index.html#categorias" data-i18n="nav_categories">Categorías</a>
@@ -62,8 +67,7 @@
             <div class="categories-grid">
                 <!-- Category 1: Repuestos -->
                 <div class="category-card" data-category="repuestos">
-                    <div class="category-bg"
-                        style="background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1000&auto=format&fit=crop');">
+                    <div class="category-bg" style="background-image: url('img/product_exterior.png');">
                     </div>
                     <div class="category-overlay">
                         <h3>Repuestos</h3>
@@ -73,8 +77,7 @@
 
                 <!-- Category 2: Llantas -->
                 <div class="category-card" data-category="llantas">
-                    <div class="category-bg"
-                        style="background-image: url('https://images.unsplash.com/photo-1578844251758-2f71da645217?q=80&w=1000&auto=format&fit=crop');">
+                    <div class="category-bg" style="background-image: url('img/product_rim.png');">
                     </div>
                     <div class="category-overlay">
                         <h3>Llantas y Rines</h3>
@@ -84,8 +87,7 @@
 
                 <!-- Category 3: Interior -->
                 <div class="category-card" data-category="interior">
-                    <div class="category-bg"
-                        style="background-image: url('https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1000&auto=format&fit=crop');">
+                    <div class="category-bg" style="background-image: url('img/product_interior.png');">
                     </div>
                     <div class="category-overlay">
                         <h3>Interior</h3>
@@ -95,8 +97,7 @@
 
                 <!-- Category 4: Exterior -->
                 <div class="category-card" data-category="exterior">
-                    <div class="category-bg"
-                        style="background-image: url('https://images.unsplash.com/photo-1600706432502-77b0e2e7bf47?q=80&w=1000&auto=format&fit=crop');">
+                    <div class="category-bg" style="background-image: url('img/product_exterior.png');">
                     </div>
                     <div class="category-overlay">
                         <h3>Exterior</h3>
@@ -106,8 +107,7 @@
 
                 <!-- Category 5: Audio y Video -->
                 <div class="category-card" data-category="audio">
-                    <div class="category-bg"
-                        style="background-image: url('https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1000&auto=format&fit=crop');">
+                    <div class="category-bg" style="background-image: url('img/product_interior.png');">
                     </div>
                     <div class="category-overlay">
                         <h3>Audio y Video</h3>
@@ -117,8 +117,7 @@
 
                 <!-- Category 6: Cuidado y Detailing -->
                 <div class="category-card" data-category="care">
-                    <div class="category-bg"
-                        style="background-image: url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop');">
+                    <div class="category-bg" style="background-image: url('img/product_care.png');">
                     </div>
                     <div class="category-overlay">
                         <h3>Car Care</h3>
@@ -146,10 +145,9 @@
                 <div class="product-card" data-category="llantas" data-id="1" data-title="Rines Deportivos 19 Pulgadas"
                     data-price="899.00" data-quality="Aleación Premium"
                     data-desc="Rines ligeros de alta resistencia. Diseño aerodinámico para mejor rendimiento."
-                    data-img="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_rim.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1000&auto=format&fit=crop"
-                            alt="Rines Deportivos">
+                        <img src="img/product_rim.png" alt="Rines Deportivos">
                     </div>
                     <div class="product-info">
                         <h3>Rines Deportivos 19"</h3>
@@ -163,10 +161,9 @@
                 <div class="product-card" data-category="exterior" data-id="2" data-title="Kit de Luces LED Underglow"
                     data-price="120.00" data-quality="RGB Impermeable"
                     data-desc="Iluminación LED personalizable con control remoto. Resistente al agua y golpes."
-                    data-img="https://images.unsplash.com/photo-1609526393158-7628a83f9841?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_exterior.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1609526393158-7628a83f9841?q=80&w=1000&auto=format&fit=crop"
-                            alt="Kit de Luces LED">
+                        <img src="img/product_exterior.png" alt="Kit de Luces LED">
                     </div>
                     <div class="product-info">
                         <h3>Kit de Luces LED Underglow</h3>
@@ -180,10 +177,9 @@
                 <div class="product-card" data-category="interior" data-id="3" data-title="Fundas de Asiento Premium"
                     data-price="250.00" data-quality="Cuero Genuino"
                     data-desc="Fundas a medida con costuras reforzadas. Máximo confort y durabilidad."
-                    data-img="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_interior.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1000&auto=format&fit=crop"
-                            alt="Asientos de Cuero">
+                        <img src="img/product_interior.png" alt="Asientos de Cuero">
                     </div>
                     <div class="product-info">
                         <h3>Fundas de Asiento Premium</h3>
@@ -192,14 +188,14 @@
                             Detalles</button>
                     </div>
                 </div>
+
                 <!-- Product 4 -->
                 <div class="product-card" data-category="repuestos" data-id="4" data-title="Kit de Frenos Cerámicos"
                     data-price="450.00" data-quality="Premium Racing"
                     data-desc="Frenos de alto rendimiento para pista y calle. Disipación de calor superior."
-                    data-img="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_exterior.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1000&auto=format&fit=crop"
-                            alt="Frenos Cerámicos">
+                        <img src="img/product_exterior.png" alt="Frenos Cerámicos">
                     </div>
                     <div class="product-info">
                         <h3>Kit de Frenos Cerámicos</h3>
@@ -213,10 +209,9 @@
                 <div class="product-card" data-category="audio" data-id="5" data-title="Subwoofer 12 Pulgadas"
                     data-price="180.00" data-quality="High Fidelity"
                     data-desc="Graves profundos y potentes. Cono reforzado y bobina de voz doble."
-                    data-img="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_interior.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1000&auto=format&fit=crop"
-                            alt="Subwoofer">
+                        <img src="img/product_interior.png" alt="Subwoofer">
                     </div>
                     <div class="product-info">
                         <h3>Subwoofer 12"</h3>
@@ -230,10 +225,9 @@
                 <div class="product-card" data-category="care" data-id="6" data-title="Kit de Pulido Profesional"
                     data-price="85.00" data-quality="Professional Grade"
                     data-desc="Restaura el brillo de tu auto. Incluye pulidora, almohadillas y compuestos."
-                    data-img="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_care.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop"
-                            alt="Kit Pulido">
+                        <img src="img/product_care.png" alt="Kit Pulido">
                     </div>
                     <div class="product-info">
                         <h3>Kit de Pulido</h3>
@@ -243,14 +237,13 @@
                     </div>
                 </div>
 
-                <!-- Product 7: Repuestos -->
+                <!-- Product 7: Repuestos (Oil) -->
                 <div class="product-card" data-category="repuestos" data-id="7" data-title="Aceite Sintético 5W-30"
                     data-price="45.00" data-quality="Full Synthetic"
                     data-desc="Máxima protección para tu motor. Intervalos de cambio extendidos."
-                    data-img="https://images.unsplash.com/photo-1599256621730-535171e28e50?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_care.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?q=80&w=1000&auto=format&fit=crop"
-                            alt="Aceite Motor">
+                        <img src="img/product_care.png" alt="Aceite Motor">
                     </div>
                     <div class="product-info">
                         <h3>Aceite Sintético 5W-30</h3>
@@ -264,10 +257,9 @@
                 <div class="product-card" data-category="exterior" data-id="8" data-title="Alerón de Fibra de Carbono"
                     data-price="320.00" data-quality="Carbon Fiber"
                     data-desc="Mejora la aerodinámica y el estilo. Acabado brillante y ligero."
-                    data-img="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_exterior.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&w=1000&auto=format&fit=crop"
-                            alt="Alerón">
+                        <img src="img/product_exterior.png" alt="Alerón">
                     </div>
                     <div class="product-info">
                         <h3>Alerón Fibra de Carbono</h3>
@@ -281,10 +273,9 @@
                 <div class="product-card" data-category="audio" data-id="9" data-title="Pantalla Multimedia 10''"
                     data-price="299.00" data-quality="HD Touchscreen"
                     data-desc="Android Auto y Apple CarPlay. Navegación GPS y Bluetooth 5.0."
-                    data-img="https://images.unsplash.com/photo-1517260739337-6799d239ce83?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_interior.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1517260739337-6799d239ce83?q=80&w=1000&auto=format&fit=crop"
-                            alt="Pantalla Multimedia">
+                        <img src="img/product_interior.png" alt="Pantalla Multimedia">
                     </div>
                     <div class="product-info">
                         <h3>Pantalla Multimedia 10"</h3>
@@ -298,14 +289,45 @@
                 <div class="product-card" data-category="llantas" data-id="10" data-title="Neumático All-Terrain"
                     data-price="180.00" data-quality="Off-Road"
                     data-desc="Tracción superior en tierra y asfalto. Durabilidad extrema."
-                    data-img="https://images.unsplash.com/photo-1578844251758-2f71da645217?q=80&w=1000&auto=format&fit=crop">
+                    data-img="img/product_rim.png">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1578844251758-2f71da645217?q=80&w=1000&auto=format&fit=crop"
-                            alt="Neumático">
+                        <img src="img/product_rim.png" alt="Neumático">
                     </div>
                     <div class="product-info">
                         <h3>Neumático All-Terrain</h3>
                         <span class="product-price">$180.00</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 11: Dash Cam (New) -->
+                <div class="product-card" data-category="interior" data-id="11" data-title="Dash Cam 4K Ultra HD"
+                    data-price="149.99" data-quality="Ultra HD"
+                    data-desc="Grabación en bucle, visión nocturna y sensor de impacto G-Sensor."
+                    data-img="img/product_interior.png">
+                    <div class="product-image">
+                        <img src="img/product_interior.png" alt="Dash Cam">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dash Cam 4K</h3>
+                        <span class="product-price">$149.99</span>
+                        <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
+                            Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Product 12: Roof Rack (New) -->
+                <div class="product-card" data-category="exterior" data-id="12" data-title="Barra de Techo Aerodinámica"
+                    data-price="220.00" data-quality="Aluminum Alloy"
+                    data-desc="Capacidad de 75kg, diseño silencioso y compatible con la mayoría de autos."
+                    data-img="img/product_exterior.png">
+                    <div class="product-image">
+                        <img src="img/product_exterior.png" alt="Barra de Techo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Barra de Techo</h3>
+                        <span class="product-price">$220.00</span>
                         <button class="btn btn-primary open-modal-btn" style="width: 100%;" data-i18n="btn_details">Ver
                             Detalles</button>
                     </div>
@@ -354,13 +376,12 @@
                     </ul>
 
                     <!-- Language Switcher -->
-                    <div class="lang-switcher" style="margin-top: 20px; display: flex; gap: 10px; align-items: center;">
-                        <select id="langSelect"
-                            style="padding: 8px; border-radius: 5px; background: var(--input-bg); color: var(--text-primary); border: 1px solid var(--border-color);">
+                    <div class="lang-switcher">
+                        <select id="langSelect">
                             <option value="es">Español</option>
                             <option value="en">English</option>
                         </select>
-                        <button id="themeToggle" class="btn btn-outline" style="padding: 8px 12px; border-radius: 5px;">
+                        <button id="themeToggle" class="btn btn-outline">
                             <i class="fas fa-moon"></i>
                         </button>
                     </div>

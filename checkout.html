@@ -88,13 +88,18 @@
             }
         }
     </style>
+    <link rel="icon" href="img/logo.png" type="image/png">
 </head>
 
 <body>
 
     <header id="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Car<span>Team</span></a>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="CarTeam Logo"
+                    style="height: 40px; margin-right: 10px; vertical-align: middle;">
+                Car<span>Team</span>
+            </a>
             <nav class="nav-links">
                 <a href="index.html" data-i18n="checkout_back">Volver a la Tienda</a>
             </nav>
@@ -276,13 +281,12 @@
                         <li><i class="fas fa-envelope"></i> info@carteam.com</li>
                     </ul>
                     <!-- Language Switcher -->
-                    <div class="lang-switcher" style="margin-top: 20px; display: flex; gap: 10px; align-items: center;">
-                        <select id="langSelect"
-                            style="padding: 8px; border-radius: 5px; background: var(--input-bg); color: var(--text-primary); border: 1px solid var(--border-color);">
+                    <div class="lang-switcher">
+                        <select id="langSelect">
                             <option value="es">Español</option>
                             <option value="en">English</option>
                         </select>
-                        <button id="themeToggle" class="btn btn-outline" style="padding: 8px 12px; border-radius: 5px;">
+                        <button id="themeToggle" class="btn btn-outline">
                             <i class="fas fa-moon"></i>
                         </button>
                     </div>
