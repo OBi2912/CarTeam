@@ -280,6 +280,16 @@ header.scrolled {
     color: var(--text-primary);
 }
 
+.hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-btns .btn {
+    padding: 10px 24px;
+    font-size: 1rem;
+}
+
 /* Categories */
 .categories-grid {
     display: grid;
