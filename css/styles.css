@@ -882,6 +882,13 @@ footer {
         width: 48px;
         height: 48px;
     }
+
+    /* Resize Shop Now button on mobile */
+    .nav-actions .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
 }
 
 /* Payment Methods Styles */

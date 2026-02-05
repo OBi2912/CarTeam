@@ -507,7 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langSelect = document.getElementById('langSelect');
 
     // Helper to get current language
-    const getCurrentLang = () => localStorage.getItem('carTeamLang') || 'es';
+    const getCurrentLang = () => localStorage.getItem('carTeamLang') || 'en';
 
     const updateLanguage = (lang) => {
         // Save preference
@@ -589,7 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Initialize Theme
-    const savedTheme = localStorage.getItem('carTeamTheme') || 'dark';
+    const savedTheme = localStorage.getItem('carTeamTheme') || 'light';
     updateTheme(savedTheme);
 
     if (themeToggle) {
