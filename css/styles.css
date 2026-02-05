@@ -188,6 +188,11 @@ header.scrolled {
     color: var(--accent-color);
 }
 
+[data-theme="light"] .logo span {
+    color: #054a91;
+    /* Dark blue for high contrast in daylight mode */
+}
+
 .nav-links {
     display: flex;
     gap: 30px;
